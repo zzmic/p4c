@@ -107,7 +107,11 @@ IR::P4Action *DeclarationGenerator::genActionDeclaration() {
     P4Scope::prop.in_action = true;
     params = genParameterList();
 
-    blk = target().statementGenerator().genBlockStatement(false);
+    // blk = target().statementGenerator().genBlockStatement(false);
+
+    // Generate an empty block statement instead of generating a block statement with (actual) content
+    // This will generate a declared `action` block without any (actual) content 
+    blk = new IR::BlockStatement();
 
     auto *ret = new IR::P4Action(name, params, blk);
 
@@ -166,7 +170,12 @@ IR::P4Control *DeclarationGenerator::genControlDeclaration() {
 
     IR::IndexedVector<IR::Declaration> localDecls = genLocalControlDecls();
     // apply body
-    auto *applyBlock = target().statementGenerator().genBlockStatement(false);
+    // auto *applyBlock = target().statementGenerator().genBlockStatement(false);
+
+    // Presumably, this will similarly generate an empty block statement instead of generating a block statement with (actual) content
+    // In other words, this change is expected to contribute to generating a declared `control` block without any (actual) content
+    // But this doesn't seem to be the case, as the generated control block still contains (actual) content
+    auto *applyBlock = new IR::BlockStatement();
 
     // end of scope
     P4Scope::endLocalScope();
