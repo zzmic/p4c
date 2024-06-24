@@ -113,9 +113,8 @@ IR::P4Control *GenericCoreSmithTarget::generateIngressBlock() const {
     // apply body
     // auto *applyBlock = statementGenerator().genBlockStatement(false);
 
-    // Presumably, this will similarly generate an empty block statement instead of generating a block statement with (actual) content
-    // In other words, this change is expected to contribute to generating a declared `control` block without any (actual) content
-    // But this doesn't seem to be the case, as the generated control block still contains (actual) content
+    // Generate an empty block statement instead of generating a block statement with (actual) content
+    // This will generate an `apply` block (in the local control) without any (actual) content 
     auto *applyBlock = new IR::BlockStatement();
 
     // end of scope
