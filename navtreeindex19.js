@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"struct_util_1_1_hasher_3_01bool_01_4.html":[28,0,22,18],
+"struct_util_1_1_hasher_3_01char_01_4.html":[28,0,22,19],
+"struct_util_1_1_hasher_3_01cstring_01_4.html":[28,0,22,21],
+"struct_util_1_1_hasher_3_01double_01_4.html":[28,0,22,22],
 "struct_util_1_1_hasher_3_01float_01_4.html":[28,0,22,23],
 "struct_util_1_1_hasher_3_01signed_01char_01_4.html":[28,0,22,26],
 "struct_util_1_1_hasher_3_01signed_01int_01_4.html":[28,0,22,27],
@@ -42,8 +46,6 @@ var NAVTREEINDEX19 =
 "structstd_1_1hash_3_01std_1_1pair_3_01_t1_00_01_t2_01_4_01_4.html":[28,0,18,4],
 "structstd_1_1hash_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html":[27,0,7,5],
 "structstd_1_1hash_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html":[28,0,18,5],
-"structstd_1_1hash_3_01table__entry_01_4.html":[27,0,7,6],
-"structstd_1_1hash_3_01table__entry_01_4.html":[28,0,18,6],
 "todo.html":[25],
 "topics.html":[26]
 };
